@@ -1,0 +1,25 @@
+# Copy this file into your own repo at .github/workflows/depguard.yml
+# to scan your dependencies for suspicious crypto-stealer patterns on every PR.
+
+name: DepGuard
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  depguard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Scan node_modules with DepGuard
+        run: npx depguard node_modules --fail-on high

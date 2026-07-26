@@ -1,0 +1,37 @@
+{
+  "name": "depguard",
+  "version": "0.1.0",
+  "description": "Scan installed npm dependencies for crypto-stealer style behavior (clipboard hijacking, seed-phrase hunting, exfiltration, obfuscated payloads) before you trust them.",
+  "main": "lib/scanner.js",
+  "bin": {
+    "depguard": "./bin/depguard.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run.js",
+    "scan": "node bin/depguard.js"
+  },
+  "keywords": [
+    "security",
+    "crypto",
+    "npm",
+    "supply-chain",
+    "malware",
+    "dependency-scanner",
+    "wallet-security"
+  ],
+  "author": "meowrypto",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meowrypto/DepGuard.git"
+  }
+}
