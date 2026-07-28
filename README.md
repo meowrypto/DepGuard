@@ -70,6 +70,8 @@ Pattern suggestions are very welcome — if you've seen a real attack use a tech
 
 ## Support
 
+[![Support this project](https://img.shields.io/badge/%E2%98%95_Support_this_project-donatr.ee-orange?style=for-the-badge)](https://donatr.ee/meowrypto/)
+
 If DepGuard helped you catch something, or you just want to support ongoing development, you can donate here: [donatr.ee/meowrypto](https://donatr.ee/meowrypto/)
 
 ## License
