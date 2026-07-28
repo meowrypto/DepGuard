@@ -4,6 +4,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/%40meowrypto%2Fdepguard.svg)](https://www.npmjs.com/package/@meowrypto/depguard)
 [![CI](https://github.com/meowrypto/DepGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/meowrypto/DepGuard/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/npm/l/%40meowrypto%2Fdepguard.svg)](./LICENSE)
+[![Support this project](https://img.shields.io/badge/%E2%98%95_support-donatr.ee-orange)](https://donatr.ee/meowrypto/)
 
 Scan your installed npm dependencies for **crypto-stealer style behavior** — clipboard hijacking, seed-phrase hunting, exfiltration to Discord/Telegram/Pastebin, obfuscated payloads, and postinstall scripts that fetch-and-run — before you trust them.
 
@@ -69,8 +70,6 @@ Most supply-chain security tools are built for large teams and paid tiers. DepGu
 Pattern suggestions are very welcome — if you've seen a real attack use a technique not covered here, please open an issue or PR with a (sanitized, non-functional) example. See [`lib/patterns.js`](./lib/patterns.js) for the pattern format.
 
 ## Support
-
-[![Support this project](https://img.shields.io/badge/%E2%98%95_Support_this_project-donatr.ee-orange?style=for-the-badge)](https://donatr.ee/meowrypto/)
 
 If DepGuard helped you catch something, or you just want to support ongoing development, you can donate here: [donatr.ee/meowrypto](https://donatr.ee/meowrypto/)
 
