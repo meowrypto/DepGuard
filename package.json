@@ -1,6 +1,6 @@
 {
   "name": "@meowrypto/depguard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Scan installed npm dependencies for crypto-stealer style behavior (clipboard hijacking, seed-phrase hunting, exfiltration, obfuscated payloads) before you trust them.",
   "main": "lib/scanner.js",
   "bin": {
