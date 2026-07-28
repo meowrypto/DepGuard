@@ -1,5 +1,10 @@
 # DepGuard
 
+[![npm version](https://img.shields.io/npm/v/%40meowrypto%2Fdepguard.svg)](https://www.npmjs.com/package/@meowrypto/depguard)
+[![npm downloads](https://img.shields.io/npm/dm/%40meowrypto%2Fdepguard.svg)](https://www.npmjs.com/package/@meowrypto/depguard)
+[![CI](https://github.com/meowrypto/DepGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/meowrypto/DepGuard/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/npm/l/%40meowrypto%2Fdepguard.svg)](./LICENSE)
+
 Scan your installed npm dependencies for **crypto-stealer style behavior** — clipboard hijacking, seed-phrase hunting, exfiltration to Discord/Telegram/Pastebin, obfuscated payloads, and postinstall scripts that fetch-and-run — before you trust them.
 
 Supply-chain attacks that target crypto wallets are a real and growing threat: a compromised or typosquatted npm package doesn't need to be sophisticated, it just needs to read your clipboard or your `.env` file once. DepGuard is a small, dependency-free heuristic scanner you can run locally or in CI to catch the most common patterns those attacks share.
@@ -11,29 +16,29 @@ Supply-chain attacks that target crypto wallets are a real and growing threat: a
 No install needed — run it directly:
 
 ```bash
-npx depguard
+npx @meowrypto/depguard
 ```
 
 Or install as a dev dependency:
 
 ```bash
-npm install --save-dev depguard
+npm install --save-dev @meowrypto/depguard
 ```
 
 ## Usage
 
 ```bash
 # Scan node_modules in the current directory (default)
-npx depguard
+npx @meowrypto/depguard
 
 # Scan a specific directory
-npx depguard ./some-folder
+npx @meowrypto/depguard ./some-folder
 
 # Only fail (exit code 1) on medium severity or above — useful for stricter CI
-npx depguard node_modules --fail-on medium
+npx @meowrypto/depguard node_modules --fail-on medium
 
 # Output machine-readable JSON
-npx depguard node_modules --json > report.json
+npx @meowrypto/depguard node_modules --json > report.json
 ```
 
 Exit code is `0` when nothing at or above the `--fail-on` threshold (default: `high`) is found, and `1` otherwise — so it plugs straight into CI.

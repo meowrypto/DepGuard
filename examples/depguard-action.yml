@@ -22,4 +22,4 @@ jobs:
         run: npm ci
 
       - name: Scan node_modules with DepGuard
-        run: npx depguard node_modules --fail-on high
+        run: npx @meowrypto/depguard node_modules --fail-on high
