@@ -73,6 +73,8 @@ Pattern suggestions are very welcome — if you've seen a real attack use a tech
 
 If DepGuard helped you catch something, or you just want to support ongoing development, you can donate here: [donatr.ee/meowrypto](https://donatr.ee/meowrypto/)
 
+<img src="./assets/donate-qr.gif" alt="Donation QR code" width="150" />
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
