@@ -67,7 +67,7 @@ Most supply-chain security tools are built for large teams and paid tiers. DepGu
 
 ## Contributing
 
-Pattern suggestions are very welcome — if you've seen a real attack use a technique not covered here, please open an issue or PR with a (sanitized, non-functional) example. See [`lib/patterns.js`](./lib/patterns.js) for the pattern format.
+Pattern suggestions are very welcome — use the [New pattern suggestion](https://github.com/meowrypto/DepGuard/issues/new?template=pattern_suggestion.yml) issue form. If DepGuard flags something that isn't actually malicious, please use the [False positive report](https://github.com/meowrypto/DepGuard/issues/new?template=false_positive.yml) form so it can be tuned. See [`lib/patterns.js`](./lib/patterns.js) for the pattern format.
 
 ## Support
 

@@ -1,0 +1,44 @@
+name: False positive report
+description: DepGuard flagged something that isn't actually malicious
+title: "[False Positive] "
+labels: ["false-positive"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report — this directly helps reduce noise for everyone.
+
+  - type: input
+    id: pattern-id
+    attributes:
+      label: Which finding was flagged?
+      description: The (id) shown in brackets after the pattern label, e.g. `clipboard-read`.
+      placeholder: e.g. eth-address-regex
+    validations:
+      required: true
+
+  - type: input
+    id: package
+    attributes:
+      label: Which package/file triggered it?
+      description: Package name + version, or the file path if it's your own code.
+      placeholder: e.g. some-legit-wallet-lib@2.3.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Why is this a false positive?
+      description: Briefly explain the legitimate reason this code matches the pattern.
+    validations:
+      required: true
+
+  - type: textarea
+    id: snippet
+    attributes:
+      label: Relevant snippet (optional)
+      description: The specific line(s) that matched, if you're comfortable sharing.
+      render: javascript
+    validations:
+      required: false
