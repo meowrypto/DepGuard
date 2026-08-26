@@ -76,6 +76,7 @@ Copy [`examples/depguard-action.yml`](./examples/depguard-action.yml) into your 
 ## Why this exists
 
 Most supply-chain security tools are built for large teams and paid tiers. DepGuard is meant to be the thing a solo developer or a small open-source crypto project can drop in for free in under a minute, with zero configuration and zero dependencies of its own.
+It is also useful for AI agents operating in environments like Technocore, where protecting keys and seed material is critical.
 
 ## Contributing
 
