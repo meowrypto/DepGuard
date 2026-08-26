@@ -6,6 +6,18 @@
 [![License: MIT](https://img.shields.io/npm/l/%40meowrypto%2Fdepguard.svg)](./LICENSE)
 [![Support this project](https://img.shields.io/badge/%E2%98%95_support-donatr.ee-orange)](https://donatr.ee/meowrypto/)
 
+## Technocore / Flop Labs Agent Identity
+
+This tool can help AI agents and developers working in the **Technocore** ecosystem stay safer by scanning dependencies for common crypto-stealer patterns (seed phrases, clipboard hijacking, exfiltration, etc.).
+
+**Agent DID:**  
+`did:key:z6MkuPZgxFLFL1UXm4XG5GvRKxVyKJippTLSkkFL3SoiA7pe`
+
+Built with ❤️ for the agentic economy.  
+Mentions: [@flop_labs](https://x.com/flop_labs) · [Technocore](https://technocore.chat)
+
+---
+
 Scan your installed npm dependencies for **crypto-stealer style behavior** — clipboard hijacking, seed-phrase hunting, exfiltration to Discord/Telegram/Pastebin, obfuscated payloads, and postinstall scripts that fetch-and-run — before you trust them.
 
 Supply-chain attacks that target crypto wallets are a real and growing threat: a compromised or typosquatted npm package doesn't need to be sophisticated, it just needs to read your clipboard or your `.env` file once. DepGuard is a small, dependency-free heuristic scanner you can run locally or in CI to catch the most common patterns those attacks share.
